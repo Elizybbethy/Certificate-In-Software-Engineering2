@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>GENQ KYC FORM</h1>
+    <form method="POST" action="">
+        <div>
+            <h3>Bio Data</h3>
+            {% csrf_token %}
+            <input type="text" name="Firstname" placeholder="First Name" required>
+            <input type="text" name="Lastname" placeholder="Last Name" required><br><br>
+            <input type="text" name="dateofbirth" placeholder="Date Of Birth(DD/MM/YYYY)" required>
+            <input type="text" name="Gender" placeholder="Gender" required>
+        </div>
+        <h3>Location</h3>
+        <div>
+            <input type="text" name="country" placeholder="Country" required>
+            <input type="text" name="state" placeholder="State / District" required><br><br>
+            <input type="text" name="town" placeholder="Town" required>
+            <input type="text" name="code" placeholder="Zip Code" required>
+            <div>
+                <h3>Contact And Address</h3>
+                <div>
+                    <input type="text" name="Phone" placeholder="Phone Number 1" required>
+                    <input type="text" name="Phone" placeholder="Phone Number 2" required><br><br>
+                    <input type="text" name="email" placeholder="Email" required>
+
+                    <div>
+                    </div>
+                    <input type="Submit" class="btn btn-lg btn-outline-success" value="collect">
+    </form>
+</body>
+
+</html>

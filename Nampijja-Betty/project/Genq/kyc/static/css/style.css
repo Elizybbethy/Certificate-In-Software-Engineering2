@@ -1,0 +1,28 @@
+.nav {
+    background-color: rgb(92, 186, 186);
+}
+
+body {
+    background-color: #c4d1de;
+}
+form{
+    margin: 0% 50% 4% 20%;
+    border: brown solid 2px;
+    padding: 2% 5%;
+    font-size: larger;
+    border-radius: 5%;
+}
+h1{
+    margin: 2% 25%;
+}
+footer {
+    background-color: #ece6e6;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    color: black;
+}

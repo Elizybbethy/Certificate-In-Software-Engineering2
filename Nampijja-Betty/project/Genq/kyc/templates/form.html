@@ -1,0 +1,49 @@
+{% comment %} {% extends 'base.html' %} {% endcomment %}
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+{% block content %}
+
+<body>
+    <nav class="nav navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h1 class="d-inline-block align-text-top">GENQ</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-right" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    
+                </ul>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'base'%}">Home</a>
+            </li>
+        </div>
+    </nav>
+    <h1>Register here!</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Register</button>
+    </form>
+</body><br><br>
+<footer>
+    <p>
+        All rights reserved to elizybbethy <br>
+        copyright@2023
+    </p>
+</footer>
+</html>
+{% endblock %}
